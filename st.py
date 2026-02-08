@@ -18,7 +18,7 @@ while True:
 	os.system("pyfiglet --color=RED MineStresserC2")
 	print(Fore.RED + "[1] IP L4")
 	print(Fore.RED + "[2] Ping Checker MCPE")
-	print(Fore.RED + "[3] MCBOT 0.14.x")
+	print("")
 	print("Credit: MineGamerST")
 	print("")
 	
@@ -33,18 +33,6 @@ while True:
 		os.system("clear")
 		os.system("pyfiglet --color=RED MineStresserC2")
 		os.system(f"python ping.py {player_4_ip} -p {player_4_port}")
-		
-	if player == '3':
-		os.system("clear")
-		os.system("pyfiglet --color=RED MineStresserC2")
-		player_3_ip = input(Fore.RED + "IP: ")
-		player_3_port = input(Fore.RED + "Port: ")
-		player_3_bots = input(Fore.RED + "How Many Bots You Want: ")
-		time.sleep(1)
-		os.system("clear")
-		os.system("pyfiglet --color=RED MineStresserC2")
-		print(Fore.RED + f"Running MCBot: {player_4_ip} {player_4_port}")
-		os.system(f"python mcbot.py {player_3_ip} {player_3_port} {player_3_bots}")
 		
 	if player == '1':
 		os.system("clear")
