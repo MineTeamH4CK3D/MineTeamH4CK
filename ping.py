@@ -21,11 +21,11 @@ medium_latency = 0
 if args.tm:
     timeout = float(args.tm)
 else:   
-    timeout = 0
+    timeout = 2
 if args.cd:
     coldown = float(args.tm)
 else:
-    coldown = 0
+    coldown = 2
 sock = socket(AF_INET, SOCK_DGRAM)
 sock.settimeout(timeout)
 payload = bytes.fromhex("01" + "0000000000000000" + "00ffff00fefefefefdfdfdfd12345678" + "0000000000000000")
