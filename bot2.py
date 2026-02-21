@@ -29,7 +29,7 @@ async def on_ready():
 @bot.command(name='helps')
 async def ayuda(ctx):
     help_text = (
-        "**MineStresserC2 Cmds:**\n"
+        "**MuxTeamH4CK Cmds:**\n"
         "- `!helps`\n"
         "- `!methods`\n"
         "- `!stop`\n"
@@ -75,7 +75,7 @@ async def botstatus(ctx):
         if cpu_percent > 0.9 or mem_percent > 0.9:
             status = "🔴 High"
 
-        await ctx.send(f"**Bot:** {status}\n"
+        await ctx.send(f"**MuxTeamH4CK Status:** {status}\n"
                        f"CPU: {cpu_load:.2f} ({cpu_percent*100:.0f}%)\n"
                        f"RAM: {mem_free:.0f}MB / {mem_total:.0f}MB ({mem_percent*100:.0f}%)")
     except Exception as e:
